@@ -1,4 +1,4 @@
-Feature: Inicio
+Feature: Prueba
 
   Scenario Outline: Prueba de inicio
     Given El usuario navega para iniciar secion
