@@ -22,7 +22,7 @@ import cucumber.api.java.en.Then
 import cucumber.api.java.en.When
 import internal.GlobalVariable
 
-public class inicio {
+public class Gmail {
 	@Given("El usuario navega para iniciar secion")
 	def usuarioNavegaParaIniciarSecion(){
 		println(" \n El usuarioNavegaParaIniciarSecion")
@@ -50,7 +50,7 @@ public class inicio {
 	@Then("El verifica pagina principal")
 	def VerificaPaginaDePrincipal(){
 		println ("\n El VerificaPaginaPrincipal")
-		WebUI.selectOptionByValue(findTestObject('Object Repository/Page_CURA Healthcare Service/select_Tokyo CURA Healthcare Center        _5b4107'),
+		WebUI.selectOptionByValue(findTestObject('Object Repository/Page_CURA Healthcare Service/select_Tokyo CURA Healthcare Center_5b4107'),
 				'Seoul CURA Healthcare Center', true)
 		WebUI.takeScreenshot("C:\\Users\\TestingIT_5\\Katalon Studio\\Gmail\\Screnshot\\targets\\inicio\\cita.png")
 	}
