@@ -17,3 +17,5 @@ import internal.GlobalVariable as GlobalVariable
 
 CucumberKW.runFeatureFolder('Include/features')
 
+not_run: CucumberKW.runFeatureFolder('')
+

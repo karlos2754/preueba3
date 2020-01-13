@@ -50,14 +50,14 @@ public class Gmail {
 	@Then("El verifica pagina principal")
 	def VerificaPaginaDePrincipal(){
 		println ("\n El VerificaPaginaPrincipal")
-		WebUI.selectOptionByValue(findTestObject('Object Repository/Page_CURA Healthcare Service/select_Tokyo CURA Healthcare Center_5b4107'),
-				'Seoul CURA Healthcare Center', true)
+		WebUI.selectOptionByValue(findTestObject('Object Repository/Page_CURA Healthcare Service/select_Tokyo CURA Healthcare Center        _5b4107'), 
+    'Seoul CURA Healthcare Center', true)
 		WebUI.takeScreenshot("C:\\Users\\TestingIT_5\\Katalon Studio\\Gmail\\Screnshot\\targets\\inicio\\cita.png")
 	}
 	@When ("Selecciona lugar cita medica")
 	def CitaMedica(){
 		println ("\n la CitaMedica ")
-		WebUI.click(findTestObject('Object Repository/Page_CURA Healthcare Service/div_Visit Date (Required)_input-group-addon'))
+		WebUI.click(findTestObject('Object Repository/Page_CURA Healthcare Service/input_Visit Date (Required)_visit_date'))
 		WebUI.takeScreenshot("C:\\Users\\TestingIT_5\\Katalon Studio\\Gmail\\Screnshot\\targets\\inicio\\Lugar.png")
 	}
 	@When("Informa fecha")
